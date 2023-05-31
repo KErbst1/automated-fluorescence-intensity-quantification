@@ -1,4 +1,4 @@
-# automated-fluorescence-intensity-extraction
+# automated-fluorescence-intensity-quantification
 Codes for automated image processing in Fiji to generate calibration curves from confocal laser scanning microscopy images. Two different methods are presented: Cell boundary Prediction Based Quantification (CPBQ) and Fluorescence Intensity Based Quantification (FIBQ). CPBQ uses cell boundary prediction images generated with PlantSeg to generate a ROI that is later applied to original calibration curve image stacks for quantifying pixel intensities. In contrast, FIBQ generates a ROI based on the image of the pH stable channel post smoothing. 
 
 ## Macro_CPBQ.ijm
