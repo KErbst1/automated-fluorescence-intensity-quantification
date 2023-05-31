@@ -9,6 +9,7 @@ Cell boundary Prediction Based Quantification (CPBQ)
 This Fiji macro uses PlantSeg prediction images to generate ROIs that are applied onto the original image stacks to quantify pixel intensities solely at cell walls. The quantifications are later used for the plotting of calibration curves.
 
 Input: Cell boundary predictions from PlantSeg (https://github.com/hci-unihd/plant-seg). To generate these predictions one must feed .tif images of the pH stable channel into PlantSeg. The pH stable channel can be extracted from image stacks with "Macro_channel_extraction_from_image_stacks.ijm"
+
 Output: Excel sheet with measurements of fluorescence intensities of channel 1 and channel 2 of an image stack in regions of interest which were defined based on PlantSeg predictions.
 
 ## Macro_FIBQ.ijm
@@ -16,6 +17,7 @@ Fluorescence Intensity Based Quantification (FIBQ)
 This Fiji macro uses the pH stable channel of an image stack to generate a ROI post smoothing (gaussian blur, substract background). The generated ROI is then applied onto the original image stack to quantify pixel intensities. The quantifications are later used for the plotting of calibration curves.
 
 Input: Image stacks for calibration curve generation in .lif format
+
 Output: Excel sheet with measurements of fluorescence intensities of channel 1 and channel 2 of an image stack in regions of interest which were defined by the pH stable channel. 
 
 ## Macro_ROI_generation_for_cropping_images.ijm
