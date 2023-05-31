@@ -21,10 +21,10 @@ Input: Image stacks for calibration curve generation in .lif format
 Output: Excel sheet with measurements of fluorescence intensities of channel 1 and channel 2 of an image stack in regions of interest which were defined by the pH stable channel. 
 
 ## Macro_ROI_generation_for_cropping_images.ijm
-This Fiji macro generates ROIs via manual selection that which will be applied onto PlantSeg predictions (Macro_PlantSeg_prediction_cropping_with_pre-generated_ROI.ijm) and original image stacks (Macro_Image_stack_cropping_with_pre-generated_ROI.ijm) for cutting out root tips. 
+This Fiji macro generates ROIs via manual selection which will be applied onto PlantSeg predictions (Macro_PlantSeg_prediction_cropping_with_pre-generated_ROI.ijm) and original image stacks (Macro_Image_stack_cropping_with_pre-generated_ROI.ijm) for cutting selected regions. 
 
 ## Macros for cutting out selected regions of images
 ### Macro_PlantSeg_prediction_cropping_with_pre-generated_ROI.ijm
-Macro that applies ROI from (Macro_ROI_generation_for_cropping_images.ijm) onto PlantSeg predictions to cut out root tips.
+Macro that applies ROI from (Macro_ROI_generation_for_cropping_images.ijm) onto PlantSeg predictions to cut out selected regions.
 ### Macro_Image_stack_cropping_with_pre-generated_ROI.ijm
-Macro that applies ROI from (Macro_ROI_generation_for_cropping_images.ijm) onto original image stacks to cut out root tip in all channels of the image stack.
+Macro that applies ROI from (Macro_ROI_generation_for_cropping_images.ijm) onto original image stacks to cut out selected regions in all channels of the image stack.
