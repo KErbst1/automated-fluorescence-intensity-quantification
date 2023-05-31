@@ -1,8 +1,5 @@
 # automated-fluorescence-intensity-extraction
-Codes for automated image processing in Fiji to generate calibration curves from confocal laser scanning microscopy images. In both methods, CPBQ and FIBQ, fluorescence intensities are measured in cell walls.
-
-## Macro_channel_extraction_from_image_stacks.ijm
-This Fiji macro can be used for extracting the pH stable channel from an image stack as .tif in a new folder.
+Codes for automated image processing in Fiji to generate calibration curves from confocal laser scanning microscopy images. Two different methods are presented: Cell boundary Prediction Based Quantification (CPBQ) and Fluorescence Intensity Based Quantification (FIBQ). CPBQ uses cell boundary prediction images generated with PlantSeg to generate a ROI that is later applied to original calibration curve image stacks for quantifying pixel intensities. In contrast, FIBQ generates a ROI based on the image of the pH stable channel post smoothing. 
 
 ## Macro_CPBQ.ijm
 Cell boundary Prediction Based Quantification (CPBQ)
@@ -19,6 +16,9 @@ This Fiji macro uses the pH stable channel of an image stack to generate a ROI p
 Input: Image stacks for calibration curve generation in .lif format
 
 Output: Excel sheet with measurements of fluorescence intensities of channel 1 and channel 2 of an image stack in regions of interest which were defined by the pH stable channel. 
+
+## Macro_channel_extraction_from_image_stacks.ijm
+This Fiji macro can be used for extracting the pH stable channel from an image stack as .tif in a new folder.
 
 ## Macro_ROI_generation_for_cropping_images.ijm
 This Fiji macro generates ROIs via manual selection which will be applied onto PlantSeg predictions (Macro_PlantSeg_prediction_cropping_with_pre-generated_ROI.ijm) and original image stacks (Macro_Image_stack_cropping_with_pre-generated_ROI.ijm) for cutting selected regions. 
